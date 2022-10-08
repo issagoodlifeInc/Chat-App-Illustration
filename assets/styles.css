@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* #### Text */
+
+  --paleviolet: hsl(276, 100%, 81%);
+  /* (sub-heading at the top of the app UI) */
+  --moderateviolet: hsl(276, 55%, 52%);
+  /* (chat on the left) */
+  --desaturateddarkkviolet: hsl(271, 15%, 43%);
+  /* (chat on the right) */
+  --grayishblue: hsl(206, 6%, 79%);
+  /* (placeholder text) */
+  --vdarkdesaturatedviolet: hsl(271, 36%, 24%);
+  /* (main heading) */
+  --dkgrayishviolet: hsl(270, 7%, 64%);
+  /* (paragraph) */
+
+  /* #### Text */
+
+  /* #### Gradients */
+
+  --lightmagenta: hsl(293, 100%, 63%);
+  --lightviolet: hsl(264, 100%, 61%);
+  /* linear gradient for bg colors */
+
+  /* #### Gradients */
+
+
+  /* ### Secondary */
+
+  --white: hsl(0, 0%, 100%)
+  --lightgrayishviolet: hsl(270, 20%, 96%);
+   /* (app background) */
+  --vdarkdesaturatedviolet: hsl(271, 36%, 24%);
+   /* (submit button background) */
+  --vlightmagenta: hsl(289, 100%, 72%);
+   /* (radio button outline) */
+
+  /* ### Secondary */
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif; /* 400, 500, 700 */
+}
