@@ -1,134 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
-  
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- CSS -->
-<link rel="stylesheet" href="./assets/styles.css">
-  
-  <title>Frontend Mentor | [Chat App Illustration]</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/styles.css" />
 
-</head>
-<body>
-
-    <>
-
+    <title>Frontend Mentor | [Chat App Illustration]</title>
+  </head>
+  <body>
     <main>
       <div class="phone">
         <div class="overlay">
-        <div class="top">
-          <div class="user">
-            <img src="./assets/images/chevron_left.png" alt="Left">
+          <div class="top">
+            <div class="user">
+              <img src="./assets/images/chevron_left.png" alt="Left" />
 
-            <img src="./assets/images/avatar.jpg" alt="Avatar">
+              <img src="./assets/images/avatar.jpg" alt="Avatar" />
 
-            <p class="username">Samuel Green</p>
-            <span>Available to Walk</span>
+              <p class="username">Samuel Green</p>
+              <span>Available to Walk</span>
+            </div>
+            <img src="./assets/images/threedotspng.png" alt="ThreeDots" />
           </div>
-          <img src="./assets/images/threedotspng.png" alt="ThreeDots">
+
+          <section class="phone-body">
+            <div class="body-text left-text">
+              <p class="text sender">
+                That sounds great. I’d be happy with that.
+              </p>
+            </div>
+            <div class="body-text right-text">
+              <p class="text sender">
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+            <div class="body-imgs right-text">
+              <img src="./assets/images/dog-image-1.jpg" alt="Puppy" />
+              <img src="./assets/images/dog-image-2.jpg" alt="Puppy" />
+              <img src="./assets/images/dog-image-3.jpg" alt="Puppy" />
+            </div>
+            <div class="body-text right-text">
+              <p class="text sendee">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+            </div>
+            <div class="body-text left-text">
+              <p class="text sendee">
+                Can you make it?
+              </p>
+            </div>
+            <div class="body-text left-text">
+              <p class="text sender">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+            <div class="body-text left-text">
+              <input type="radio" name="walk" id="walk-ammount" />
+              <p class="walk-lenth">30 minute walk</p>
+              <p class="walk-cost">$29</p>
+            </div>
+            <div class="body-text left-text">
+              <input type="radio" name="walk" id="walk-ammount" />
+              <p class="walk-lenth">1 hour walk</p>
+              <p class="walk-cost">$49</p>
+            </div>
+
+            <input type="text" placeholder="Type a message..." />
+            <i class="input-icon">
+              <img src="./assets/images/chevron_right.png" alt="Right" />
+            </i>
+          </section>
         </div>
-
-        <section class="phone-body">
-          <div class="body-text left-text">
-            <p class="text sender">
-              That sounds great. I’d be happy with that.
-            </p>
-          </div>
-          <div class="body-text right-text">
-            <p class="text sender">
-              Could you send over some pictures of your dog, please?
-            </p>
-          </div>
-          <div class="body-imgs right-text">
-            <img src="./assets/images/dog-image-1.jpg" alt="Puppy">
-            <img src="./assets/images/dog-image-2.jpg" alt="Puppy">
-            <img src="./assets/images/dog-image-3.jpg" alt="Puppy">
-          </div>
-          <div class="body-text right-text">
-            <p class="text sendee">
-              Here are a few pictures. She’s a happy girl!
-            </p>
-          </div>
-          <div class="body-text left-text">
-            <p class="text sendee">
-              Can you make it?
-            </p>
-          </div>
-          <div class="body-text left-text">
-            <p class="text sender">
-              She looks so happy! The time we discussed works. How long shall I take her out for?
-            </p>
-          </div>
-          <div class="body-text left-text">
-            <p class="text sender">
-
-            </p>
-          </div>
-          <div class="body-text left-text">
-            <p class="text sender">
-
-            </p>
-          </div>
-
-          <input type="text" placeholder="Type a message...">
-        </section>
       </div>
-    </div>
 
-    <div class="main-text">
-      <h1 class="main-title">
-        Simple booking
-      </h1>
+      <div class="main-text">
+        <h1 class="main-title">
+          Simple booking
+        </h1>
 
-      <p class="main-text">
-        Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-        discuss arrangements and make bookings. Once the walk has been completed you can rate 
-        your walker and book again all through the chat.
-      </p>
-    </div>
-
+        <p class="main-text">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
     </main>
-
-  
-  
-
-  
-
-  
-
-  
-
-
-
- 
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
- 
-
-  
-  
-  </>
-
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Lesley Kimutai</a>.
-  </footer>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lesley Kimutai</a>.
+    </footer>
+  </body>
 </html>
