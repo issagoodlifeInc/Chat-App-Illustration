@@ -48,7 +48,7 @@
 body {
   font-size: 16px;
   font-family: "Rubik", sans-serif; /* 400, 500, 700 */
-  background: var(--white);
+  background: var(--grayishblue);
 }
 
 main {
@@ -72,10 +72,81 @@ main::before {
 
 main::after {
   background: var(--lightgrayishviolet);
-  /* background: var(--grayishblue); */
   right: -200px;
   bottom: 0;
   border-radius: 300px 250px 0 0;
+}
+
+.phone {
+  width: 75%;
+  max-width: 370px;
+  background: var(--white);
+  z-index: 500;
+  margin: 5rem auto;
+  border-radius: 35px;
+  padding: 10px;
+  /* box-shadow: 0 1px 50px var(--vdarkdesaturatedviolet); */
+}
+
+.overlay {
+  background: var(--lightgrayishviolet);
+  border-radius: 35px;
+}
+
+.top {
+  background: linear-gradient(
+    to right,
+    var(--lightviolet),
+    var(--lightmagenta)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 30px;
+  border-radius: 25px 25px 5px 5px;
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 15px;
+  border-radius: 0 0 20px 20px;
+  background: var(--white);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  color: var(--white);
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--white);
+  margin-inline: 7px;
+}
+
+.username {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.username span {
+  font-weight: 400;
+  color: var(--grayishblue);
+  font-size: 0.6rem;
+  display: block;
 }
 
 .attribution {

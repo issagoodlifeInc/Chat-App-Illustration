@@ -20,6 +20,12 @@
       rel="stylesheet"
     />
 
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles.css" />
 
@@ -31,14 +37,23 @@
         <div class="overlay">
           <div class="top">
             <div class="user">
-              <img src="./assets/images/chevron_left.png" alt="Left" />
+              <span class="material-symbols-outlined">
+                chevron_left
+              </span>
+              <img
+                class="user-img"
+                src="./assets/images/avatar.jpg"
+                alt="Avatar"
+              />
 
-              <img src="./assets/images/avatar.jpg" alt="Avatar" />
-
-              <p class="username">Samuel Green</p>
-              <span>Available to Walk</span>
+              <p class="username">
+                Samuel Green
+                <span>Available to Walk</span>
+              </p>
             </div>
-            <img src="./assets/images/threedotspng.png" alt="ThreeDots" />
+            <span class="material-symbols-outlined">
+              more_vert
+            </span>
           </div>
 
           <section class="phone-body">
@@ -86,7 +101,9 @@
 
             <input type="text" placeholder="Type a message..." />
             <i class="input-icon">
-              <img src="./assets/images/chevron_right.png" alt="Right" />
+              <span class="material-symbols-outlined">
+                chevron_right
+              </span>
             </i>
           </section>
         </div>
