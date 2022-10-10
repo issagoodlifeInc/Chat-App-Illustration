@@ -149,6 +149,51 @@ main::after {
   display: block;
 }
 
+.phone-body {
+  padding: 7px;
+}
+.body-text {
+  font-weight: 400;
+  width: 65%;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.left-text {
+  color: var(--moderateviolet);
+  background: #d8d9cf;
+}
+
+.left-text,
+.cost {
+  border-radius: 15px 15px 15px 3px;
+}
+
+.right-text {
+  color: var(--desaturateddarkkviolet);
+  background: var(--white);
+  margin-left: auto;
+  border-radius: 15px 15px 3px 15px;
+}
+
+.body-imgs {
+  text-align: right;
+}
+.body-imgs img {
+  width: 50px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.cost {
+  background-color: linear-gradient(var(--lightmagneta), var(--lightviolet));
+}
+
+input[type="radio"] {
+  border: 1px solid var(--white);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
