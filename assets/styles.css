@@ -52,9 +52,6 @@ body {
   background: var(--grayishblue);
 }
 
-main {
-}
-
 main::before,
 main::after {
   content: "";
@@ -188,7 +185,17 @@ main::after {
 }
 
 .cost {
-  background-color: linear-gradient(var(--lightmagneta), var(--lightviolet));
+  background: linear-gradient(
+    to right,
+    var(--lightviolet),
+    var(--lightmagenta)
+  );
+  display: flex;
+  gap: 5px;
+  color: var(--white);
+}
+.walk-cost {
+  margin-left: auto;
 }
 
 input[type="radio"] {
@@ -218,4 +225,7 @@ input[type="radio"] {
     right: -175px;
     bottom: -200px;
   }
+}
+
+@media only screen and (min-width: 960px) {
 }
