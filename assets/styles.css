@@ -191,6 +191,7 @@ main::after {
     var(--lightmagenta)
   );
   display: flex;
+  align-items: center;
   gap: 5px;
   color: var(--white);
 }
@@ -199,7 +200,18 @@ main::after {
 }
 
 input[type="radio"] {
-  border: 1px solid var(--white);
+  appearance: none;
+  background-color: var(--lightviolet);
+  border: 1px solid var(--vlightmagenta);
+  color: var(--vlightmagenta);
+  font: inherit;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
+
+input[type="text"] {
+  width: 80%;
 }
 
 /* Booking Part */
