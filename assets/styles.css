@@ -55,6 +55,9 @@ body {
   height: 100vh;
 }
 
+main {
+}
+
 main::before,
 main::after {
   content: "";
@@ -88,7 +91,8 @@ main::after {
   border-radius: 35px;
   padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* box-shadow: 0 1px 50px var(--vdarkdesaturatedviolet); */
+  /* animation: 2s ease-in 3s 1 fadeInAnimation; */
+  /* animation: fadeInAnimation 1s 0.3s 1 ease-in downwards; */
 }
 
 .overlay {
@@ -164,6 +168,7 @@ main::after {
 }
 
 .left-text {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
   color: var(--moderateviolet);
   background: #d8d9cf;
 }
@@ -178,6 +183,11 @@ main::after {
   background: var(--white);
   margin-left: auto;
   border-radius: 15px 15px 3px 15px;
+}
+
+.right-text,
+.body-imgs {
+  animation: 1s ease-out 0s 1 slideInFromRight;
 }
 
 .body-imgs {
@@ -279,6 +289,30 @@ input[type="text"] {
   color: var(--vlightmagenta);
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media only screen and (max-width: 960px) {
   main::before,
   main::after {
