@@ -29,11 +29,11 @@ Users should be able to:
 
 - Mobile View:-
 
-![](./screenshot.jpg)
+![](./assets/images/phone.jpg)
 
 - Laptop View:-
 
-![](./screenshot.jpg)
+![](./assets/images/laptop.jpg)
 
 ### Links
 
@@ -51,24 +51,29 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+/* Media query used to bring out the mobile layout */
+@media only screen and (min-width: 960px) {
+  main {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
-```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+/* Radio Input */
+
+input[type="radio"] {
+  appearance: none;
+  background-color: var(--lightmagenta);
+  border: 1px solid var(--vlightmagenta);
+  font: inherit;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+}
 ```
 
 ### Continued development
@@ -81,3 +86,5 @@ const proudOfThisFunc = () => {
 - Frontend Mentor - [@leskim](https://www.frontendmentor.io/profile/leskim)
 
 ## Acknowledgments
+
+-centering inputs -[stackoverflow](https://stackoverflow.com/questions/1281403/place-input-box-at-the-center-of-div)
