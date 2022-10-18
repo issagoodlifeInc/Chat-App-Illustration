@@ -130,14 +130,13 @@ main::after {
 }
 
 .material-symbols-outlined {
-  line-height: 0;
   cursor: pointer;
   color: var(--white);
 }
 
 .user-img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid var(--white);
   margin-inline: 7px;
