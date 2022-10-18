@@ -130,6 +130,8 @@ main::after {
 }
 
 .material-symbols-outlined {
+  line-height: 0;
+  cursor: pointer;
   color: var(--white);
 }
 
