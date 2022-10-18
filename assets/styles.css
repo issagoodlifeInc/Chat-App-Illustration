@@ -130,6 +130,7 @@ main::after {
 }
 
 .material-symbols-outlined {
+  height: 1.4rem;
   cursor: pointer;
   color: var(--white);
 }
@@ -144,6 +145,8 @@ main::after {
 
 .username {
   font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
   color: var(--white);
 }
 
