@@ -227,6 +227,9 @@ input[type="radio"] {
   height: 0.9rem;
   border-radius: 50%;
 }
+input[type="radio"]:checked {
+  border: 2px solid var(--vlightmagenta);
+}
 .newmessage {
   position: relative;
 }
