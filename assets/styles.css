@@ -88,8 +88,6 @@ main::after {
   border-radius: 35px;
   padding: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* animation: 2s ease-in 3s 1 fadeInAnimation; */
-  /* animation: fadeInAnimation 1s 0.3s 1 ease-in downwards; */
 }
 
 .overlay {
@@ -309,14 +307,6 @@ input[type="text"] {
     transform: translateX(0);
   }
 }
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @media only screen and (max-width: 960px) {
   main::before,
   main::after {
@@ -340,6 +330,6 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-inline: auto;
   }
 }
